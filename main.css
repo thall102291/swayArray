@@ -1,0 +1,106 @@
+/*Syle for entire page*/
+* { 
+    background-color: #3d3d3d; 
+    
+}
+
+/*Sway array logo******************************************************************************************************************/
+
+/* "sway array" portion of the logo*/
+#logo1 { text-align: center;
+    font-size: 100px;
+    font-style: italic;
+    font-family: 'New Athenea Unicode';
+    color: green;
+    margin-bottom: 0 em;
+}
+/*"design" portion of the logo*/
+#logo2 {
+    text-align: center;
+    font-size: 50px;
+    font-style: normal;
+    letter-spacing: 8px;
+    top: 855;
+    z-index: 1;
+    color: white;
+}
+
+#logo3 {
+    word-spacing: normal;
+    text-align:center;
+    font-style: normal;
+    top:855;
+    z-index:1;
+    font-size:35px;
+    color:#FFFF00;
+}
+
+/*nav bar**************************************************************************************************************************/
+
+/*nav bar*/
+nav {
+    background-color: black;
+    font-size: 24px;
+    font-family: serif;
+    font-style: normal;
+    color: white;
+    list-style-type: none;
+    
+}
+
+/*nav bar list*/
+.navClass > ul {
+    background-color: #212121;
+    width: 100%;
+
+}
+
+/*nav bar items*/
+.navClass > ul > li {
+    background-color: #212121;
+    display: inline-block;
+    width: 150px;
+    position: relative;
+    padding: 14px 16px;
+    
+}
+
+/*set items in nav bar hover color*/
+.navClass > ul >li:hover {
+    background-color: #5e5e5d;
+}
+/*display sub menu when hovering over gallery*/
+.navClass li:hover .sub-menu{
+    z-index: 1;
+    display: block;
+}
+
+/*Sub menu*/
+ul.sub-menu {
+    list-style-type: none;
+    position: absolute;
+    margin-top: 14px;
+    margin-left: -74px;
+    display: none;
+    opacity: 0.90;
+}
+
+/*Sub menu items*/
+ul.sub-menu > li {
+    background-color: #212121;
+    padding-top: 6px;
+    padding: 14px 16px;
+    width: 180px;
+}
+
+ul.sub-menu > li:hover {
+    background-color: #5e5e5d;
+}
+
+#footer {
+   font-size: 15px;
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:30px;   /* Height of the footer */
+}
