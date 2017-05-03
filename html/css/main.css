@@ -1,0 +1,45 @@
+/*
+FILE: main.css
+AUTH: Timothy
+DATE: 04/19/17 
+DESC: Contains the styling for the background, logo, navigation bar and copyright.
+*/
+
+
+/*Syle for entire page*/
+* { 
+    background-color: #3d3d3d; 
+}
+
+/*Sway array logo**************************************/
+.companylogo {
+    cursor: pointer;
+}
+
+/* "sway array" portion of the logo*/
+#logo1 { text-align: center;
+    font-size: 100px;
+    font-style: italic;
+    font-family: 'New Athenea Unicode';
+    color: green;
+    cursor: pointer;
+}
+/*"design" portion of the logo*/
+#logo2 {
+    text-align: center;
+    font-size: 50px;
+    font-style: normal;
+    letter-spacing: 10px;
+    color: white;
+}
+
+#logo3 {
+    letter-spacing: normal;
+    text-align:center;
+    font-style: normal;
+    font-size:35px;
+    color:#FFFF00;
+}
+
+/*nav bar*******************************************/
+

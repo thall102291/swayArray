@@ -1,0 +1,106 @@
+
+.galName {
+    text-align: center;
+    font-style: normal;
+    font-size: 40px;
+    color: gold;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+.master {
+    display: inline-flex;
+    position: relative;
+    /*width: 790px;*/
+    min-height: 445px;
+    margin: auto;
+}
+
+.carousel {
+    position: relative;
+    width: 640px;
+    min-height: 420px;
+    overflow: hidden;
+}
+
+.inner {
+    position: relative;
+    display: inline-flex;
+    overflow: hidden;
+    transition: left 0.5s linear;
+}
+
+.prev, .next {  
+    background-color: white;
+    opacity: 0.3;
+    font-size: 60px;
+    font-family: sans-serif;
+    width: 70px;
+    height: 420px;
+    cursor: pointer;
+    opacity: 0.15;
+    transition: opacity 0.15s linear;
+    box-sizing: border-box;
+}
+
+.next {
+    border-radius: 0px 5px 5px 0px;
+}
+
+.prev {
+    border-radius: 5px 0px 0px 5px;
+}
+
+.prev:hover {
+    opacity: 1;
+}
+
+.next:hover {
+    opacity: 1;
+}
+
+.prev::after {
+    content: "<";
+    line-height: 420px;
+    padding: 0.35em;
+    
+}
+
+.next::after {
+    content: ">";
+    line-height: 420px;
+    padding: 0.35em;
+}
+
+.bubbles {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 5px;
+}
+
+.bubble {
+    margin: 2.5px;
+    background-color: white;
+    border-radius: 100000px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    opacity: 0.25;
+    transition: opacity 0.1s linear;
+}
+
+/*Highlight bubble when mouse is over it*/
+.bubble:hover {
+    opacity: 0.6;
+}
+
+/*Highlight the active index bubble*/
+.bubble.active {
+    opacity: 1;
+}

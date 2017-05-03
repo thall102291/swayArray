@@ -1,0 +1,73 @@
+/*nav bar*/
+nav {
+    font-size: 24px;
+    font-family: serif;
+    font-style: normal;
+    color: white;
+    list-style-type: none;
+    cursor: default;
+    width: 100%;
+}
+
+/*nav bar list*/
+.navClass > ul {
+    background-color: #212121;
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+}
+
+a.navitem {
+    color: white;
+    background: no-repeat;
+    text-decoration: none;
+}
+
+/*nav bar items*/
+.navClass > ul > li {
+    background-color: #212121;
+    text-align: center;
+    list-style-type: none;
+    width: 150px;
+    position: relative;
+    padding: 14px 16px;
+}
+
+/*set items in nav bar hover color*/
+.navClass > ul > li:hover {
+    background-color: #5e5e5d;
+}
+/*display sub menu when hovering over gallery*/
+.navClass li:hover .sub-menu{
+    z-index: 1;
+    display: block;
+}
+
+/*Sub menu*/
+ul.sub-menu {
+    list-style-type: none;
+    position: absolute;
+    margin-top: 14px;
+    margin-left: -74px;
+    display: none;
+    opacity: 0.90;
+    
+}
+
+/*Sub menu items*/
+ul.sub-menu > li > a{
+    background-color: #212121;
+    text-decoration: none;
+    color: white;
+    padding-top: 6px;
+    padding: 7px 16px;
+    width: 180px;
+    display: block;
+    text-align: center;
+}
+
+/*Highlight Submenu items*/
+a:hover, ul.sub-menu > li > a:hover {
+    background-color: #5e5e5d;
+}
